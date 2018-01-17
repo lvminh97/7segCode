@@ -22,18 +22,18 @@ _7seg::_7seg(int width, int height, char title[]){
 char* _7seg::hexa(){
     char* st = new char[6];
     char hex[17] = "0123456789ABCDEF";
-	strcpy(st, "0x");
-	int tmp1 = (led[7] * 8 + led[6] * 4 + led[5] * 2 + led[4]) % 16,
-		tmp2 = (led[3] * 8 + led[2] * 4 + led[1] * 2 + led[0]) % 16;
-	if(type){
-		tmp1 = 15 - tmp1;
-		tmp2 = 15 - tmp2;
-	}
-	st[2] = hex[tmp1];
-	st[3] = hex[tmp2];
-	st[4] = ' ';
-	st[5] = '\0';
-	return st;
+    strcpy(st, "0x");
+    int tmp1 = (led[7] * 8 + led[6] * 4 + led[5] * 2 + led[4]) % 16,
+        tmp2 = (led[3] * 8 + led[2] * 4 + led[1] * 2 + led[0]) % 16;
+    if(type){
+        tmp1 = 15 - tmp1;
+        tmp2 = 15 - tmp2;
+    }
+    st[2] = hex[tmp1];
+    st[3] = hex[tmp2];
+    st[4] = ' ';
+    st[5] = '\0';
+    return st;
 }
 
 void _7seg::typeDisp(){
