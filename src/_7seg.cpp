@@ -12,10 +12,10 @@ int rect[][10] = {
 
 _7seg::_7seg(int width, int height, char title[]){
     initwindow(width, height);
-	setbkcolor(15);
-	cleardevice();
-	setwindowtitle(title);
-	for(int i = 0; i < 8; i++) led[i] = 0;
+    setbkcolor(15);
+    cleardevice();
+    setwindowtitle(title);
+    for(int i = 0; i < 8; i++) led[i] = 0;
     type = 1;
 }
 
