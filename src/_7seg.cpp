@@ -79,7 +79,7 @@ void _7seg::codeDisp(){
     setbkcolor(15);
     settextstyle(3, 0, 2);
     outtextxy(40, 350, "Bin code : ");
-	outtextxy(40, 380, "Hexa code: ");
+    outtextxy(40, 380, "Hexa code: ");
     setcolor(4);
     setbkcolor(15);
     char binCode[9] = "00000000";
