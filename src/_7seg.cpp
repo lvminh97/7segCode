@@ -39,7 +39,7 @@ char* _7seg::hexa(){
 void _7seg::typeDisp(){
     setcolor(0);
     settextstyle(3, 0, 2);
-	outtextxy(240, 40, "Type:");
+    outtextxy(240, 40, "Type:");
     if(type){
         setbkcolor(14);
         outtextxy(240, 60, "  AC  ");
