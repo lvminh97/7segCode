@@ -21,7 +21,7 @@ _7seg::_7seg(int width, int height, char title[]){
 
 char* _7seg::hexa(){
     char* st = new char[6];
-	char hex[17] = "0123456789ABCDEF";
+    char hex[17] = "0123456789ABCDEF";
 	strcpy(st, "0x");
 	int tmp1 = (led[7] * 8 + led[6] * 4 + led[5] * 2 + led[4]) % 16,
 		tmp2 = (led[3] * 8 + led[2] * 4 + led[1] * 2 + led[0]) % 16;
